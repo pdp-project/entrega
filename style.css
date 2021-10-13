@@ -15,8 +15,8 @@ con ajustes de "contrast ratio" https://webaim.org/resources/contrastchecker/
 /* cambien aquí sus colores, necesitan definir tres */
 
 :root {
-    --primercolor: #222;
-    --segundocolor: #FF3EB5; /* menos luminoso y más saturado que el primero */
+    --primercolor: #FF3EB5;
+    --segundocolor: #b81a7b; /* menos luminoso y más saturado que el primero */
     --tercercolor: #0077C8; /* más luminoso y menos saturado que el primero */
     --colorclaro: rgba(255, 255, 255, 0.9);
     --coloroscuro: rgba(0, 0, 0, 0.9);
@@ -26,7 +26,7 @@ body {
     /* asignen aquí las tipografías y colores para todo texto */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    background: var(--segundocolor);
+    background: var(--primercolor);
     color: var(--colorclaro);
 }
 
@@ -77,7 +77,7 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--colorclaro);
+    color: var(--coloroscuro);
 }
 
 @media (min-width: 576px) {
@@ -120,7 +120,7 @@ aside {
 }
 
 footer {
-    color: var(--segundocolor);
+    color: var(--primercolor);
 }
 
 footer a {
