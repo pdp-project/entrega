@@ -205,18 +205,19 @@
             referrerpolicy="no-referrer"
         ></script>
         <!--ESTE ES EL SCRIPT PARA EL GRÁFICO-->
-        <script>
+         <script>
             var ctx = document.getElementById("nuestroGrafico");
             var nuestroGrafico = new Chart(ctx, {
-                type: "line",
+                type: "bar",
                 data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Cyan", "Magenta"],
+                    labels: ["Colombia", "Ecuador", "Chile", "Argentina", "Costa Rica", "Mexico", "Estados Unidos"],
                     datasets: [
                         {
-                            label: "# of Votes",
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: ["#FF0000", "#0000FF", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
-                            borderWidth: 1,
+                            label: "Participación laboral de la mujer",
+                            data: [58.8, 55.4, 50.1, 47.3, 45.3, 44.1, 55.7],
+                            backgroundColor: ["#c4c4c4", "#c4c4c4", "#FF00BB", "#c4c4c4", "#c4c4c4", "#c4c4c4", "#c4c4c4"],
+                            borderColor: [ 'rgb(255, 99, 132)', 'rgb(255, 159, 64)', 'rgb(255, 205, 86)', 'rgb(75, 192, 192)', 'rgb(54, 162, 235)', 'rgb(153, 102, 255)','rgb(71, 105, 173)' ],
+                            borderWidth: 2,
                         },
                     ],
                 },
